@@ -1,0 +1,19 @@
+{
+    "name": "iversonweb/cool-kids-network",
+    "description": "A short description of your project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your.email@example.com"
+        }
+    ],
+    "require": {
+        "league/container": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "CoolKidsNetwork\\": "wp-content/themes/"
+        }
+    }
+}
