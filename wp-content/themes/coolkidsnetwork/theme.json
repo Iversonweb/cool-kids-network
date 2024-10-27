@@ -53,7 +53,7 @@
                 },
                 { 
                     "slug": "ckn-gray-900", 
-                    "color": "rgb(17 24 39)", 
+                    "color": "rgb(21 25 33)", 
                     "name": "Cool Kids Gray 900" 
                 },
                 { 
@@ -78,7 +78,7 @@
                 },
                 { 
                     "slug": "ckn-warning", 
-                    "color": "rgb(251 146 60)", 
+                    "color": "rgb(254 210 57)", 
                     "name": "Cool Kids Warning" 
                 },
                 { 
@@ -150,6 +150,16 @@
                     "fontFamily": "Rubik sans-serif",
                     "slug": "ckn-rubik",
                     "name": "Cool Kids Rubik"
+                },
+                { 
+                    "fontFamily": "Montserrat sans-serif",
+                    "slug": "ckn-montserrat",
+                    "name": "Cool Kids Monserrat"
+                },
+                { 
+                    "fontFamily": "Kanit sans-serif",
+                    "slug": "ckn-kanit",
+                    "name": "Cool Kids Kanit"
                 }
             ],
             "fontSizes": [
@@ -188,7 +198,7 @@
             "textDecoration": true
         },
         "layout": {
-            "contentSize": "800px",
+            "contentSize": "1000px",
             "wideSize": "1100px"
         },
         "spacing": {
@@ -215,7 +225,7 @@
         "blocks": {
             "core/button": {
                 "color": {
-                    "gradient": "var(--wp--preset--gradient--ckn-summer-dog)"
+                    "gradient": "var(--wp--preset--color--ckn-warning)"
                 }
             },
             "core/pullquote": {
@@ -233,7 +243,7 @@
             }
         },
         "typography": {
-            "fontFamily": "var(--wp--preset--font-family--ckn-rubik)",
+            "fontFamily": "var(--wp--preset--font-family--ckn-montserrat)",
             "fontSize": "16px",
             "fontStyle": "normal",
             "fontWeight": "normal",
