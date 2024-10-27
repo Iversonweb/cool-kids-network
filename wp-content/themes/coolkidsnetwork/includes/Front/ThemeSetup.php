@@ -9,7 +9,7 @@ class ThemeSetup {
         add_action('after_setup_theme', [$this, 'theme_setup']);
     }
 
-    public function theme_setup(): void
+    public function register(): void
     {
         add_theme_support('editor_styles');
 
