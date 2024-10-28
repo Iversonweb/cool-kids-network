@@ -1,0 +1,6 @@
+[27-Oct-2024 15:39:09 UTC] PHP Parse error:  syntax error, unexpected token "=>", expecting "]" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/themes/coolkidsnetwork/includes/Front/Enqueue.php on line 17
+[27-Oct-2024 15:39:09 UTC] PHP Parse error:  syntax error, unexpected token "=>", expecting "]" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/themes/coolkidsnetwork/includes/Front/Enqueue.php on line 17
+[27-Oct-2024 15:56:30 UTC] PHP Parse error:  syntax error, unexpected token "=>", expecting "]" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/themes/coolkidsnetwork/includes/Front/Enqueue.php on line 17
+[27-Oct-2024 15:56:31 UTC] PHP Parse error:  syntax error, unexpected token "=>", expecting "]" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/themes/coolkidsnetwork/includes/Front/Enqueue.php on line 17
+[27-Oct-2024 22:40:29 UTC] PHP Warning:  Attempt to read property "ID" on null in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php on line 167
+[27-Oct-2024 22:40:29 UTC] PHP Warning:  Attempt to read property "ID" on null in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php on line 167

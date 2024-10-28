@@ -1,0 +1,19 @@
+{
+    "name": "iversonweb/cool-kids-network",
+    "description": "Become the coolest kid on earth.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "iversonweb",
+            "email": "iversonweb98@gmail.com"
+        }
+    ],
+    "require": {
+        "league/container": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "CoolKidsNetwork\\": "includes/"
+        }
+    }
+}
