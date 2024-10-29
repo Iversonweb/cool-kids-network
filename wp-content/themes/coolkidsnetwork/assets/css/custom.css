@@ -25,6 +25,25 @@
     color: white;
 }
 
+.wp-block-navigation__responsive-container {
+    background: #151921 !important;
+    padding: 20px !important;
+}
+
+.wp-block-navigation__responsive-container-close {
+    background: white;
+    color: #151921;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.wp-block-navigation__responsive-container-content ul {
+    width: 100%;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+}
+
 .ckn-hero-section {
     min-height: 90vh;
     padding: 30px;
@@ -82,7 +101,7 @@
         font-size: 1.2rem !important;
     }
 
-    .ckn-header-login-btn{
+    .wp-block-loginout {
         font-size: 1rem !important;
     }
 }

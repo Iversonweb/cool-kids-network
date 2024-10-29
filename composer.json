@@ -13,7 +13,8 @@
     },
     "autoload": {
         "psr-4": {
-            "CoolKidsNetwork\\": "includes/"
+            "CoolKidsNetwork\\": "wp-content/themes/coolkidsnetwork/includes/",
+            "CoolKidsDashboard\\": "wp-content/plugins/cool-kids-dashboard/"
         }
     }
 }
