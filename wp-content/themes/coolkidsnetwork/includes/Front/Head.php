@@ -1,8 +1,10 @@
 <?php
 
 namespace CoolKidsNetwork\Front;
+use CoolKidsNetwork\Front\ThemeInterface;
 
-class Head {
+class Head implements ThemeInterface 
+{
 
     public function register() {
         add_action('wp_head', [$this, 'add_preconnect_links'], 5);

@@ -1,8 +1,11 @@
 <?php
 
 namespace CoolKidsNetwork\Front;
+use CoolKidsNetwork\Front\ThemeInterface;
 
-class Enqueue {
+class Enqueue implements ThemeInterface {
+
+    private $container;
 
     protected $styles = [
         'ckn_font_rubik_and_pacifico' => [

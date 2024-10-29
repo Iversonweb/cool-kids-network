@@ -1,12 +1,13 @@
 <?php
 
 namespace CoolKidsNetwork\Front;
+use CoolKidsNetwork\Front\ThemeInterface;
 
-class ThemeSetup {
+class ThemeSetup implements ThemeInterface {
 
     public function __construct() 
     {
-        add_action('after_setup_theme', [$this, 'theme_setup']);
+        add_action('after_setup_theme', [$this, 'register']);
     }
 
     public function register(): void
