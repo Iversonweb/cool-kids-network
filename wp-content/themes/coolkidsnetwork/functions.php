@@ -9,7 +9,6 @@ use CoolKidsNetwork\Front\Enqueue;
 use CoolKidsNetwork\Front\Head;
 use CoolKidsNetwork\Front\ThemeSetup;
 
-
 $register = new Theme(
     new Enqueue(),  
     new Head(), 

@@ -1,17 +1,18 @@
 {
   "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
   "apiVersion": 2,
-  "name": "cool-kids-dashboard/header-tools",
-  "title": "Header Tools",
+  "name": "cool-kids-dashboard/auth-modal",
+  "title": "Authentication Modal",
   "category": "text",
-  "description": "Adds a header toolbar that contains an authentication link",
+  "description": "Adds an authentication modal",
   "textdomain": "cool-kids-dashboard",
   "attributes": {
-    "showAuth": {
+    "showRegister": {
       "type": "boolean",
       "default": true
     }
   },
   "editorScript": "file:./index.js",
-  "style": "file:./index.css"
+  "style": "file:./index.css",
+  "script": "file:./frontend.js"
 }
