@@ -1402,3 +1402,279 @@ Stack trace:
 [29-Oct-2024 07:41:44 UTC] PHP Notice:  Function WP_Block_Type_Registry::register was called <strong>incorrectly</strong>. Block type names must not contain uppercase characters. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 5.0.0.) in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/functions.php on line 6085
 [29-Oct-2024 07:43:39 UTC] PHP Notice:  Function WP_Block_Type_Registry::register was called <strong>incorrectly</strong>. Block type names must not contain uppercase characters. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 5.0.0.) in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/functions.php on line 6085
 [29-Oct-2024 07:43:39 UTC] PHP Notice:  Function WP_Block_Type_Registry::register was called <strong>incorrectly</strong>. Block type names must not contain uppercase characters. Please see <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 5.0.0.) in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/functions.php on line 6085
+[29-Oct-2024 18:10:54 UTC] Automatic updates starting...
+[29-Oct-2024 18:10:56 UTC] Automatic updates complete.
+[30-Oct-2024 00:33:36 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:33:52 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-blog-header.php(13): require_once('/Users/mac/Loca...')
+#6 /Users/mac/Local Sites/cool-kids-network/app/public/index.php(17): require('/Users/mac/Loca...')
+#7 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:33:52 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-blog-header.php(13): require_once('/Users/mac/Loca...')
+#6 /Users/mac/Local Sites/cool-kids-network/app/public/index.php(17): require('/Users/mac/Loca...')
+#7 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:34:17 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:35:37 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:36:18 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:37:38 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:38:19 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:39:39 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:40:20 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:41:39 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:42:20 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:43:40 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:50:13 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-blog-header.php(13): require_once('/Users/mac/Loca...')
+#6 /Users/mac/Local Sites/cool-kids-network/app/public/index.php(17): require('/Users/mac/Loca...')
+#7 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 00:50:14 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\HeaderTools::register(), 0 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 25 and exactly 1 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:7
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php(25): CoolKidsDashboard\Includes\Blocks\HeaderTools->register()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->register_services()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-blog-header.php(13): require_once('/Users/mac/Loca...')
+#6 /Users/mac/Local Sites/cool-kids-network/app/public/index.php(17): require('/Users/mac/Loca...')
+#7 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 7
+[30-Oct-2024 01:23:28 UTC] PHP Warning:  require(../../templates/header-tools.php): Failed to open stream: No such file or directory in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 14
+[30-Oct-2024 01:23:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../templates/header-tools.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php:14
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-block.php(519): CoolKidsDashboard\Includes\Blocks\HeaderTools->render_header_tools(Array, '', Object(WP_Block))
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-block.php(499): WP_Block->render()
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/blocks.php(2061): WP_Block->render()
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/blocks.php(2113): render_block(Array)
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/blocks/template-part.php(154): do_blocks('<!-- wp:group {...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-block.php(519): render_block_core_template_part(Array, '', Object(WP_Block))
+#6 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/blocks.php(2061): WP_Block->render()
+#7 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/blocks.php(2113): render_block(Array)
+#8 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/block-template.php(263): do_blocks('<!-- wp:templat...')
+#9 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/template-canvas.php(12): get_the_block_template_html()
+#10 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/template-loader.php(106): include('/Users/mac/Loca...')
+#11 /Users/mac/Local Sites/cool-kids-network/app/public/wp-blog-header.php(19): require_once('/Users/mac/Loca...')
+#12 /Users/mac/Local Sites/cool-kids-network/app/public/index.php(17): require('/Users/mac/Loca...')
+#13 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 14
+[30-Oct-2024 01:23:50 UTC] PHP Warning:  include(../../templates/header-tools.php): Failed to open stream: No such file or directory in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 14
+[30-Oct-2024 01:23:50 UTC] PHP Warning:  include(): Failed opening '../../templates/header-tools.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 14
+[30-Oct-2024 01:23:50 UTC] PHP Warning:  include(../../templates/header-tools.php): Failed to open stream: No such file or directory in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 14
+[30-Oct-2024 01:23:50 UTC] PHP Warning:  include(): Failed opening '../../templates/header-tools.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/HeaderTools.php on line 14
+[30-Oct-2024 01:51:32 UTC] PHP Warning:  Undefined array key "method" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php on line 36
+[30-Oct-2024 01:51:33 UTC] PHP Warning:  Undefined array key "method" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php on line 36
+[30-Oct-2024 01:51:36 UTC] PHP Warning:  Undefined array key "method" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php on line 36
+[30-Oct-2024 01:51:36 UTC] PHP Warning:  Undefined array key "method" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php on line 36
+[30-Oct-2024 01:51:38 UTC] PHP Warning:  Undefined array key "method" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php on line 36
+[30-Oct-2024 01:51:39 UTC] PHP Warning:  Undefined array key "method" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php on line 36
+[30-Oct-2024 01:51:44 UTC] PHP Warning:  Undefined array key "method" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php on line 36
+[30-Oct-2024 02:00:11 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\RegisterBlocks::__construct(), 1 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 26 and exactly 2 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php:14
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(26): CoolKidsDashboard\Includes\Blocks\RegisterBlocks->__construct(Object(CoolKidsDashboard\Includes\Blocks\HeaderTools))
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#5 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php on line 14
+[30-Oct-2024 02:00:15 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\RegisterBlocks::__construct(), 1 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 26 and exactly 2 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php:14
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(26): CoolKidsDashboard\Includes\Blocks\RegisterBlocks->__construct(Object(CoolKidsDashboard\Includes\Blocks\HeaderTools))
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin.php(34): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/site-editor.php(12): require_once('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php on line 14
+[30-Oct-2024 02:00:16 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Includes\Blocks\RegisterBlocks::__construct(), 1 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 26 and exactly 2 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php:14
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(26): CoolKidsDashboard\Includes\Blocks\RegisterBlocks->__construct(Object(CoolKidsDashboard\Includes\Blocks\HeaderTools))
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-blog-header.php(13): require_once('/Users/mac/Loca...')
+#5 /Users/mac/Local Sites/cool-kids-network/app/public/index.php(17): require('/Users/mac/Loca...')
+#6 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Includes/Blocks/RegisterBlocks.php on line 14
+[30-Oct-2024 02:01:22 UTC] Automatic updates starting...
+[30-Oct-2024 02:01:24 UTC] Automatic updates complete.
+[30-Oct-2024 07:43:07 UTC] PHP Fatal error:  Uncaught Error: Class "CoolKidsDashboard\Includes\Api\V1\Signup\Signup" not found in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php:34
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-blog-header.php(13): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/index.php(17): require('/Users/mac/Loca...')
+#5 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 34
+[30-Oct-2024 14:21:54 UTC] PHP Warning:  Undefined array key "user_pass" in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/user.php on line 2141
+[30-Oct-2024 14:21:54 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/pluggable.php on line 2545
+[30-Oct-2024 14:21:55 UTC] Automatic updates starting...
+[30-Oct-2024 14:21:56 UTC] Automatic updates complete.
+[30-Oct-2024 21:56:45 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "list_custom_roles" not found or invalid function name in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-header.php(303): do_action('admin_notices')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/user-edit.php(201): require_once('/Users/mac/Loca...')
+#4 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php on line 324
+[30-Oct-2024 21:57:05 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "list_custom_roles" not found or invalid function name in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-header.php(303): do_action('admin_notices')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/user-edit.php(201): require_once('/Users/mac/Loca...')
+#4 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php on line 324
+[30-Oct-2024 22:00:04 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "list_custom_roles" not found or invalid function name in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-header.php(303): do_action('admin_notices')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/user-edit.php(201): require_once('/Users/mac/Loca...')
+#4 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php on line 324
+[30-Oct-2024 22:00:46 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "list_custom_roles" not found or invalid function name in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-header.php(303): do_action('admin_notices')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/user-edit.php(201): require_once('/Users/mac/Loca...')
+#4 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/class-wp-hook.php on line 324
+[31-Oct-2024 00:03:19 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Config\Plugin::__construct(), 3 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 30 and exactly 4 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php:15
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(30): CoolKidsDashboard\Config\Plugin->__construct(Object(CoolKidsDashboard\Includes\Blocks\RegisterBlocks), Object(CoolKidsDashboard\Includes\Api\V1\Init), Object(CoolKidsDashboard\Includes\Roles\Roles))
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(111): require_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#5 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Config/Plugin.php on line 15
+[31-Oct-2024 00:42:03 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/formatting.php on line 3759
+[31-Oct-2024 02:08:17 UTC] Automatic updates starting...
+[31-Oct-2024 02:08:19 UTC] Automatic updates complete.
+[31-Oct-2024 03:15:37 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/formatting.php on line 3759
+[31-Oct-2024 03:15:52 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/formatting.php on line 3759
+[31-Oct-2024 03:16:00 UTC] PHP Deprecated:  strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/formatting.php on line 3759

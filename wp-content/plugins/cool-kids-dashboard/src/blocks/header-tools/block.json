@@ -6,6 +6,12 @@
     "category": "text",
     "description": "Adds a header toolbar that contains an authentication link",
     "textdomain": "cool-kids-dashboard",
-    "attributes": {},
-    "editorScript": "file:./index.js"
+    "attributes": {
+        "showAuth": {
+            "type": "boolean",
+            "default": true
+        }     
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./index.css"
 }
