@@ -1,0 +1,305 @@
+.ckd-user-dashboard {
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.ckd-welcome-section {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    padding: 60px 20px;
+    background-color: #151921;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.ckd-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-image: url('../../../../uploads/2024/10/wavy-bg-black.72ada49b.png');
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.ckd-welcome-section h2 {
+    position: relative;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+    z-index: 2;
+}
+
+.ckd-welcome-section p {
+    position: relative;
+    color: rgb(227, 227, 227);
+    z-index: 2;
+}
+
+.ckd-special-text {
+    color: #FED239;
+}
+
+.ckd-dashboard-content-section {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    padding: 30px 30px;
+    margin-top: 30px;
+    background-color: #FED239;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.ckd-dashboard-content-container {
+    display: grid;
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.ckd-dashboard-avatar-section {
+    position: relative;
+    z-index: 2;
+}
+
+.ckd-dashboard-avatar {
+    height: 250px;
+    margin: auto;
+}
+
+.ckd-dashboard-avatar-badge {
+    background: #FED239;
+    padding: 10px;
+    color: #151921;
+    border: 1px solid #151921;
+    border-left: 4px solid #151921;
+    border-bottom: 4px solid #151921;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.ckd-dashboard-details-section {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.ckd-dashboard-details-item h6 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.ckd-dashboard-details-item p {
+    color: #d5ac16;
+}
+
+.ckd-user-directory {
+    min-height: 90vh;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ckd-dir-heading {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.ckd-dir-body {
+    padding: 30px 10px;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap: 1rem;
+}
+
+.ckd-dir-item-avatar-section {
+    position: relative;
+    background: #FED239;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+}
+
+.ckd-dir-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-image: url('../../../../uploads/2024/10/wavy-bg-black.72ada49b.png');
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.ckd-dir-item-avatar {
+    height: 200px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.ckd-dir-avatar-badge {
+    position: relative;
+    z-index: 2;
+    background: #FED239;
+    padding: 10px;
+    color: #151921;
+    border: 1px solid #151921;
+    border-left: 4px solid #151921;
+    border-bottom: 4px solid #151921;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.ckd-dir-item-details-section {
+    position: relative;
+    background: #151921;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.ckd-dir-details-item {
+    margin-bottom: 20px;
+}
+
+.ckd-dir-details-item h6 {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    z-index: 2;
+}
+
+.ckd-dir-details-item p {
+    position: relative;
+    color: rgb(226, 226, 226);
+    z-index: 2;
+}
+
+.ckd-pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ckd-pagination a,
+.ckd-pagination span {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 4px;
+    color: #0073aa;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.ckd-pagination a:hover {
+    background-color: #0073aa;
+    color: #fff;
+}
+
+.ckd-pagination .current {
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f1f1;
+    border-color: #ccc;
+}
+
+
+/**
+Dashboard Responsiveness
+**/
+
+@media only screen and (max-width: 994px)
+{
+    .ckd-welcome-section h2{
+        font-size: 2rem !important;
+        line-height: 2.6rem !important; 
+    }
+
+    .ckd-dir-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .ckd-dir-body {
+        padding: 30px 10px;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .ckd-dashboard-content-container {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media (max-width: 991px) {
+    .ckd-dashboard-content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .ckd-dir-heading h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .ckd-welcome-section h2{
+        font-size: 2rem !important;
+        line-height: 2.6rem !important; 
+    }
+
+    .ckd-dir-heading h2 {
+        font-size: 1.8rem;
+    }
+
+    .ckd-dir-body {
+        padding: 30px 10px;
+        grid-template-columns:repeat(1,minmax(0,1fr));
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 568px)
+{
+    .ckd-welcome-section h2{
+        font-size: 1.5rem !important;
+        line-height: 2rem !important; 
+    }
+
+    .ckd-dir-heading h2 {
+        font-size: 1.7rem !important;
+    }
+
+    .ckd-dir-details-item p {
+        font-size: 0.7rem !important;
+    }
+
+    .ckd-welcome-section {
+        padding: 50px 20px;
+    }
+}
+

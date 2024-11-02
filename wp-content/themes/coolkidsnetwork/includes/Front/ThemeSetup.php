@@ -5,11 +5,21 @@ use CoolKidsNetwork\Front\ThemeInterface;
 
 class ThemeSetup implements ThemeInterface {
 
+    /**
+     * The constructor
+     *
+     * @return void
+     */
     public function __construct() 
     {
         add_action('after_setup_theme', [$this, 'register']);
     }
 
+    /**
+     * Register the theme
+     *
+     * @return void
+     */
     public function register(): void
     {
         add_theme_support('editor_styles');

@@ -1,18 +1,47 @@
 <?php
 
-namespace CoolKidsNetwork;
-
-require_once __DIR__ . '../../../../vendor/autoload.php';
+require_once CKN_DEFAULT_PATH . '/vendor/autoload.php';
 
 use CoolKidsNetwork\Front\Theme;
 use CoolKidsNetwork\Front\Enqueue;
 use CoolKidsNetwork\Front\Head;
 use CoolKidsNetwork\Front\ThemeSetup;
 
-$register = new Theme(
-    new Enqueue(),  
-    new Head(), 
-    new ThemeSetup(),
+/**
+ * The enqueue scripts
+ *
+ * @var object
+ */
+$enqueueScripts = new Enqueue();
+
+/**
+ * The head
+ *
+ * @var object
+ */
+$head           = new Head();
+
+/**
+ * The theme setup
+ *
+ * @var object
+ */
+$themeSetup     = new ThemeSetup();
+
+/**
+ * The theme
+ *
+ * @var object
+ */
+$theme          = new Theme(
+    $enqueueScripts,  
+    $head, 
+    $themeSetup,
 );
 
-$register->register_services();
+/**
+ * Register the services
+ *
+ * @return void
+ */
+$theme->register_services();

@@ -14,7 +14,7 @@ registerBlockType('cool-kids-dashboard/header-tools', {
         <InspectorControls>
           <PanelBody title={ __('General', 'cool-kids-dashboard') }>
             <SelectControl
-              label={ __( 'Show Login/Register Link', 'cool-kids-dashboard' ) }
+              label={ __( 'Show Login/Logout Link', 'cool-kids-dashboard' ) }
               value={ showAuth ? 'true' : 'false' }
               options={[
                 { label: __( 'No', 'cool-kids-dashboard' ), value: 'false' },
@@ -23,7 +23,7 @@ registerBlockType('cool-kids-dashboard/header-tools', {
               onChange={ (newVal) => setAttributes({ showAuth: newVal === 'true' }) }
             />
             <CheckboxControl 
-              label={ __( 'Show Login/Register Link', 'cool-kids-dashboard' ) }
+              label={ __( 'Show Login/Logout Link', 'cool-kids-dashboard' ) }
               help={ 
                 showAuth 
                   ? __( 'Showing Link', 'cool-kids-dashboard' ) 

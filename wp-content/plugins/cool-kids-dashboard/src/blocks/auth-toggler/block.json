@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+    "apiVersion": 2,
+    "name": "cool-kids-dashboard/auth-toggler",
+    "title": "Auth Toggler",
+    "category": "text",
+    "description": "Adds a section that displays different content based on the user's login status",
+    "textdomain": "cool-kids-dashboard",
+    "attributes": {
+        "isAuth": {
+            "type": "boolean",
+            "default": true
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#151921"
+        }     
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./index.css"
+}

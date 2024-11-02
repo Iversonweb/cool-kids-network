@@ -5,11 +5,20 @@ use CoolKidsNetwork\Front\ThemeInterface;
 
 class Head implements ThemeInterface 
 {
-
+    /**
+     * Register the head
+     *
+     * @return void
+     */
     public function register() {
         add_action('wp_head', [$this, 'add_preconnect_links'], 5);
     }
 
+    /**
+     * Add the preconnect links
+     *
+     * @return void
+     */ 
     public function add_preconnect_links() 
     {
         $urls = [
