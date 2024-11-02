@@ -52,6 +52,7 @@ use CoolKidsDashboard\Inc\CustomMetadata;
 use CoolKidsDashboard\Inc\Front\Enqueue;
 use CoolKidsDashboard\Inc\Roles;
 use CoolKidsDashboard\Inc\Shortcodes;
+use CoolKidsDashboard\Inc\Api\V1\ChangeRole;
 use CoolKidsDashboard\Inc\Blocks\AuthToggler;
 /**
  * Initializes the main plugin services and registers them in a modular way.
@@ -63,9 +64,10 @@ $authModal = new AuthModal();
 $authToggler = new AuthToggler();
 $signup = new Signup();
 $signin = new Signin();
+$change_role = new ChangeRole();
 // Initialize grouped dependency instances
 $registerBlocks = new RegisterBlocks($headerTools, $authModal, $authToggler);
-$init = new Init($signup, $signin);
+$init = new Init($signup, $signin, $change_role);
 
 // Create other individual dependencies
 $roles = new Roles();
