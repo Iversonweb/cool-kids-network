@@ -4243,3 +4243,36 @@ Stack trace:
   thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Blocks/AuthToggler.php on line 102
 [02-Nov-2024 16:07:30 UTC] PHP Warning:  Undefined property: CoolKidsDashboard\Inc\Blocks\AuthToggler::$dashboard_url in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/templates/auth-toggler.php on line 13
 [02-Nov-2024 16:07:30 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in /Users/mac/Local Sites/cool-kids-network/app/public/wp-includes/formatting.php on line 4482
+[02-Nov-2024 16:26:12 UTC] PHP Fatal error:  Uncaught Error: Class "CoolKidsDashboard\Inc\Api\V1\ChangeRole" not found in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php:67
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(112): require_once('/Users/mac/Loca...')
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#4 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 67
+[02-Nov-2024 16:28:13 UTC] PHP Fatal error:  Uncaught Error: Class "CoolKidsDashboard\Inc\Api\V1\ChangeRole" not found in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php:67
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(112): require_once('/Users/mac/Loca...')
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#4 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 67
+[02-Nov-2024 16:29:23 UTC] PHP Fatal error:  Uncaught Error: Class "CoolKidsDashboard\Inc\Api\V1\ChangeRole" not found in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php:67
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(112): require_once('/Users/mac/Loca...')
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-blog-header.php(13): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/index.php(17): require('/Users/mac/Loca...')
+#5 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 67
+[02-Nov-2024 16:30:14 UTC] PHP Fatal error:  Uncaught Error: Class "CoolKidsDashboard\Inc\Api\V1\ChangeRole" not found in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php:67
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once()
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(112): require_once('/Users/mac/Loca...')
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#4 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 67
