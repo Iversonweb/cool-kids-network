@@ -13,9 +13,9 @@
 
 defined( 'ABSPATH' ) || die( 'Seems like you stumbled here by accident mate!' );
 
-//Defines
+// Defines
 define( 'CKD_PLUGIN_FILE', __FILE__ );
-define( 'CKD_PLUGIN_DIR', plugin_dir_path(CKD_PLUGIN_FILE ) );
+define( 'CKD_PLUGIN_DIR', plugin_dir_path( CKD_PLUGIN_FILE ) );
 define( 'CKD_PLUGIN_URL', plugin_dir_url( CKD_PLUGIN_FILE ) );
 
 require_once CKN_DEFAULT_PATH . '/vendor/autoload.php';
@@ -31,11 +31,11 @@ $php_version = '5.3.0';
 // Check if we meet the minimum PHP version.
 if ( version_compare( PHP_VERSION, $php_version, '<' ) ) {
 
-    // Add admin notice.
-    add_action( 'admin_notices', array( $this, 'php_admin_notice' ) );
+	// Add admin notice.
+	add_action( 'admin_notices', [ $this, 'php_admin_notice' ] );
 
-    // Bail.
-    return;
+	// Bail.
+	return;
 }
 
 use CoolKidsDashboard\Config\Plugin;
@@ -60,35 +60,35 @@ use CoolKidsDashboard\Inc\Blocks\AuthToggler;
 
 // Initialize core dependencies
 $headerTools = new HeaderTools();
-$authModal = new AuthModal();
+$authModal   = new AuthModal();
 $authToggler = new AuthToggler();
-$signup = new Signup();
-$signin = new Signin();
+$signup      = new Signup();
+$signin      = new Signin();
 $change_role = new ChangeRole();
 // Initialize grouped dependency instances
-$registerBlocks = new RegisterBlocks($headerTools, $authModal, $authToggler);
-$init = new Init($signup, $signin, $change_role);
+$registerBlocks = new RegisterBlocks( $headerTools, $authModal, $authToggler );
+$init           = new Init( $signup, $signin, $change_role );
 
 // Create other individual dependencies
-$roles = new Roles();
-$enqueue = new Enqueue();
+$roles          = new Roles();
+$enqueue        = new Enqueue();
 $customMetadata = new CustomMetadata();
-$countryMeta = new CountryMeta();
-$shortcodes = new Shortcodes();
-$createPages = new CreatePages();
-$accessControl = new AccessControl();
+$countryMeta    = new CountryMeta();
+$shortcodes     = new Shortcodes();
+$createPages    = new CreatePages();
+$accessControl  = new AccessControl();
 
 // Instantiate the main Plugin class with all dependencies
 $plugin = new Plugin(
-    $registerBlocks,
-    $init,
-    $roles,
-    $enqueue,
-    $customMetadata,
-    $countryMeta,
-    $shortcodes,
-    $createPages,
-    $accessControl,
+	$registerBlocks,
+	$init,
+	$roles,
+	$enqueue,
+	$customMetadata,
+	$countryMeta,
+	$shortcodes,
+	$createPages,
+	$accessControl,
 );
 
 // Register plugin services
