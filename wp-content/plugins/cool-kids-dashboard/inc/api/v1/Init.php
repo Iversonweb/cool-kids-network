@@ -21,14 +21,15 @@ class Init implements RegisterInterface
     protected $signin;
 
     /**
-     * The constructor
-     *
-     * @return void
+     * @var ChangeRole
      */
-    public function __construct( Signup $signup, Signin $signin )
+    protected $change_role;
+
+    public function __construct( Signup $signup, Signin $signin, ChangeRole $change_role )
     {
         $this->signup = $signup;
         $this->signin = $signin;
+        $this->change_role = $change_role;
     }
 
     /**
@@ -58,6 +59,14 @@ class Init implements RegisterInterface
             'methods' => WP_REST_Server::EDITABLE,
             'callback' => [$this->signin, 'ckn_rest_api_signin_handler'],
             'permission_callback' => '__return_true'
+        ] );
+
+        register_rest_route( 'ckn/v1', '/change-role', [
+            'methods' => WP_REST_Server::EDITABLE,
+            'callback' => [$this->change_role, 'ckn_rest_api_change_user_role'],
+            'permission_callback' => function() {
+                return current_user_can('administrator');
+            },
         ] );
     }
 }

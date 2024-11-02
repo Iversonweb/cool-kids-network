@@ -4276,3 +4276,111 @@ Stack trace:
 #3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
 #4 {main}
   thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 67
+[02-Nov-2024 16:44:22 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:44:22 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:44:22 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:46:22 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CoolKidsDashboard\Inc\Api\V1\Init::__construct(), 2 passed in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php on line 68 and exactly 3 expected in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Api/V1/Init.php:28
+Stack trace:
+#0 /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/cool-kids-dashboard.php(68): CoolKidsDashboard\Inc\Api\V1\Init->__construct(Object(CoolKidsDashboard\Inc\Api\V1\Signup), Object(CoolKidsDashboard\Inc\Api\V1\Signin))
+#1 /Users/mac/Local Sites/cool-kids-network/app/public/wp-settings.php(522): include_once('/Users/mac/Loca...')
+#2 /Users/mac/Local Sites/cool-kids-network/app/public/wp-config.php(112): require_once('/Users/mac/Loca...')
+#3 /Users/mac/Local Sites/cool-kids-network/app/public/wp-load.php(50): require_once('/Users/mac/Loca...')
+#4 /Users/mac/Local Sites/cool-kids-network/app/public/wp-admin/admin-ajax.php(22): require_once('/Users/mac/Loca...')
+#5 {main}
+  thrown in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Api/V1/Init.php on line 28
+[02-Nov-2024 16:48:24 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:48:24 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:48:24 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:50:25 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:50:25 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:50:25 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:52:26 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:52:26 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:52:26 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:54:27 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:54:27 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:54:27 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:56:28 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:56:28 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:56:28 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:58:29 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:58:29 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 16:58:29 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:00:30 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:00:30 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:00:30 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:02:31 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:02:31 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:02:31 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:04:32 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:04:32 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:04:32 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:06:33 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:06:33 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:06:33 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:08:34 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:08:34 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:08:34 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:10:34 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:10:34 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:10:34 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:12:35 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:12:35 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:12:35 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:14:36 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:14:36 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:14:36 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:16:37 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:16:37 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:16:37 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:18:38 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:18:38 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:18:38 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:20:38 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:20:38 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:20:38 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:22:39 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:22:39 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:22:39 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:24:40 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:24:40 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:24:40 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:26:41 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:26:41 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:26:41 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:28:42 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:28:42 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:28:42 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:30:43 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:30:43 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 17:30:43 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:24:35 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:24:35 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:24:35 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:33:19 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:33:19 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:33:19 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:35:20 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:35:20 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:35:20 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:37:21 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:37:21 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:37:21 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:39:22 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:39:22 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:39:22 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:41:23 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:41:23 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:41:23 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:43:24 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:43:24 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:43:24 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:45:25 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:45:25 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:45:25 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:47:26 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:47:26 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:47:26 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:49:27 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:49:27 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
+[02-Nov-2024 18:49:27 UTC] PHP Warning:  Undefined array key 0 in /Users/mac/Local Sites/cool-kids-network/app/public/wp-content/plugins/cool-kids-dashboard/Inc/Roles.php on line 122
