@@ -5,8 +5,11 @@ use CoolKidsNetwork\Front\ThemeInterface;
 
 class Enqueue implements ThemeInterface {
 
-    private $container;
-
+    /**
+     * The styles
+     *
+     * @var array
+     */
     protected $styles = [
         'ckn_font_rubik_and_pacifico' => [
             'relative' => null,
@@ -34,10 +37,20 @@ class Enqueue implements ThemeInterface {
         ],
     ];
     
+    /**
+     * Register the enqueue
+     *
+     * @return void
+     */
     public function register() {
         add_action('wp_enqueue_scripts', [$this, 'enqueue_styles']);
     }
 
+    /**
+     * Enqueue the styles
+     *
+     * @return void
+     */
     public function enqueue_styles(): void 
     {
         foreach ( $this->styles as $key => $value ) {

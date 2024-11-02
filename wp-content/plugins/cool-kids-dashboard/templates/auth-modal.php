@@ -34,7 +34,7 @@
             <label>Enter Email</label>
             <input type="text" id="ckn-signin-email" placeholder="johndoe@example.com" />
 
-            <button type="submit">Login</button>
+            <button type="submit">Confirm</button>
           </fieldset>
         </form>
         <?php if( $atts['showRegister'] ) { ?>
@@ -46,7 +46,7 @@
             <label>Enter Email</label>
             <input type="email" id="ckn-signup-email" placeholder="johndoe@example.com" />
 
-            <button type="submit">Sign up</button>
+            <button type="submit">Confirm</button>
           </fieldset>
         </form>
         <?php } ?>

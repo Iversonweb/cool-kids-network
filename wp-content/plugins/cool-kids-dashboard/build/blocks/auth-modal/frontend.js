@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const responseData = await response.json();
       if (response.ok && responseData.status === 'success') {
         displayStatus(signupStatus, 'success', "Niicceee! You're now a cool kid.");
-        setTimeout(() => location.reload(), 1500);
+        setTimeout(() => location.href = '/my-dashboard', 1500);
       } else {
         handleFormError(signupStatus, responseData);
       }
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const responseData = await response.json();
       if (response.ok && responseData.status === 'success') {
         displayStatus(signinStatus, 'success', "Welcome back! Stay cool.");
-        setTimeout(() => location.reload(), 1500);
+        setTimeout(() => location.href = '/my-dashboard', 1500);
       } else {
         handleFormError(signinStatus, responseData);
       }

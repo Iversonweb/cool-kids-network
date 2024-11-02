@@ -170,7 +170,7 @@ __webpack_require__.r(__webpack_exports__);
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
           title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('General', 'cool-kids-dashboard'),
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.SelectControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Show Login/Register Link', 'cool-kids-dashboard'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Show Login/Logout Link', 'cool-kids-dashboard'),
             value: showAuth ? 'true' : 'false',
             options: [{
               label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('No', 'cool-kids-dashboard'),
@@ -183,7 +183,7 @@ __webpack_require__.r(__webpack_exports__);
               showAuth: newVal === 'true'
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.CheckboxControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Show Login/Register Link', 'cool-kids-dashboard'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Show Login/Logout Link', 'cool-kids-dashboard'),
             help: showAuth ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Showing Link', 'cool-kids-dashboard') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Hidden Link', 'cool-kids-dashboard'),
             checked: showAuth,
             onChange: newVal => setAttributes({

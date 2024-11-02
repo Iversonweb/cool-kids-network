@@ -1,0 +1,35 @@
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/blocks/auth-toggler/main.css ***!
+  \**************************************************************************************************************************************************************************************/
+.ckn-content-toggle-heading {
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0rem;
+    line-height: 1.5;
+}
+
+.ckn-content-toggle-subheading {
+    color: #fed239;
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0rem;
+    line-height: 1.5;
+    margin-block-start: 0rem !important;
+}
+
+.ckn-content-toggle-button {
+    font-style: normal;
+    font-weight: 600;
+    background: #fed239 !important;
+    border-top-style: none;
+    border-top-width: 0rem;
+    border-left-style: none;
+    border-left-width: 0rem;
+    border-bottom-color: rgb(17 24 39);
+    border-bottom-width: 0.3rem;
+    border-right-color: rgb(17 24 39);
+    border-right-width: 0.3rem;
+    padding: 1rem 3rem !important;
+}

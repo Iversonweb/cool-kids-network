@@ -10,6 +10,10 @@
         "showAuth": {
             "type": "boolean",
             "default": true
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#151912"
         }     
     },
     "editorScript": "file:./index.js",
