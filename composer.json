@@ -14,7 +14,21 @@
     "autoload": {
         "psr-4": {
             "CoolKidsNetwork\\": "wp-content/themes/coolkidsnetwork/includes/",
-            "CoolKidsDashboard\\": "wp-content/plugins/cool-kids-dashboard/"
+            "Cool_Kids_Dashboard\\": "wp-content/plugins/cool-kids-dashboard/"
         }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.10",
+        "wp-coding-standards/wpcs": "^3.1",
+        "phpcompatibility/phpcompatibility-wp": "^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf"
     }
 }
