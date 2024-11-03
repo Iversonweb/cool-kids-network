@@ -8,9 +8,6 @@
             "email": "iversonweb98@gmail.com"
         }
     ],
-    "require": {
-        "league/container": "^4.2"
-    },
     "autoload": {
         "psr-4": {
             "CoolKidsNetwork\\": "wp-content/themes/coolkidsnetwork/includes/",
