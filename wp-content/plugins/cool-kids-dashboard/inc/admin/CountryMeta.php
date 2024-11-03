@@ -1,6 +1,6 @@
 <?php
 
-namespace CoolKidsDashboard\Inc\Admin;
+namespace Cool_Kids_Dashboard\Inc\Admin;
 
 class CountryMeta {
 	/**
@@ -16,9 +16,9 @@ class CountryMeta {
 	}
 
 	/**
-	 * Display the country meta
+	 * Displays the country field in the user profile
 	 *
-	 * @param WP_User $user
+	 * @param WP_User $user The user object.
 	 * @return void
 	 */
 	public function display_country_meta( $user ) {
@@ -32,17 +32,29 @@ class CountryMeta {
 	}
 
 	/**
-	 * Save the country meta
+	 * Saves the user's country to user meta
 	 *
-	 * @param int $user_id
+	 * @param int $user_id The ID of the user being edited.
 	 * @return void
 	 */
 	public function save_country_meta( $user_id ) {
-		if ( current_user_can( 'edit_user', $user_id ) ) {
+		// Check if the current user can edit the specified user.
+		if ( ! current_user_can( 'edit_user', $user_id ) ) {
+			return;
+		}
+
+		// Verify nonce for security.
+		if ( ! isset( $_POST['country_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['country_nonce'] ) ), 'save_country_meta_action' ) ) {
+			return;
+		}
+
+		// Check if 'country' is set in the POST request.
+		if ( isset( $_POST['country'] ) ) {
+			// Sanitize and update the 'country' user meta.
 			update_user_meta(
 				$user_id,
 				'country',
-				sanitize_text_field( $_POST['country'] )
+				sanitize_text_field( wp_unslash( $_POST['country'] ) )
 			);
 		}
 	}

@@ -14,7 +14,7 @@
     "autoload": {
         "psr-4": {
             "CoolKidsNetwork\\": "wp-content/themes/coolkidsnetwork/includes/",
-            "CoolKidsDashboard\\": "wp-content/plugins/cool-kids-dashboard/"
+            "Cool_Kids_Dashboard\\": "wp-content/plugins/cool-kids-dashboard/"
         }
     },
     "require-dev": {

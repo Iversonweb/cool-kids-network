@@ -1,11 +1,16 @@
 <?php
 
-namespace CoolKidsDashboard\Inc;
+namespace Cool_Kids_Dashboard\Inc;
 
-use CoolKidsDashboard\Inc\Interface\RegisterInterface;
+use Cool_Kids_Dashboard\Inc\Interfaces\RegisterInterface;
 
 class Roles implements RegisterInterface {
 
+	/**
+	 * Array of custom roles with their capabilities
+	 *
+	 * @var array
+	 */
 	protected $roles = [
 		[
 			'name'                => 'cool_kid',
@@ -30,7 +35,11 @@ class Roles implements RegisterInterface {
 		],
 	];
 
-
+	/**
+	 * Register hooks for role management
+	 *
+	 * @return void
+	 */
 	public function register() {
 		register_activation_hook( CKD_PLUGIN_FILE, [ $this, 'register_custom_roles' ] );
 		register_deactivation_hook( CKD_PLUGIN_FILE, [ $this, 'remove_custom_roles' ] );
@@ -79,7 +88,7 @@ class Roles implements RegisterInterface {
 		}
 
 		if ( $this->is_custom_role() ) {
-			wp_redirect( home_url() );
+			wp_safe_redirect( home_url() );
 			exit;
 		}
 	}
@@ -87,8 +96,8 @@ class Roles implements RegisterInterface {
 	/**
 	 * Hide admin bar from users with custom roles
 	 *
-	 * @param boolean $show
-	 * @return void
+	 * @param boolean $show Whether to show the admin bar.
+	 * @return boolean
 	 */
 	public function hide_admin_bar_for_custom_roles( $show ) {
 		if ( ! is_user_logged_in() ) {

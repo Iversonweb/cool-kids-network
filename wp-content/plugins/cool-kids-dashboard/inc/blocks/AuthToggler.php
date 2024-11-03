@@ -1,6 +1,6 @@
 <?php
 
-namespace CoolKidsDashboard\Inc\Blocks;
+namespace Cool_Kids_Dashboard\Inc\Blocks;
 
 use WP_User;
 
@@ -47,8 +47,8 @@ class AuthToggler {
 	/**
 	 * Renders the auth toggler block with different content for logged in users vs guests
 	 *
-	 * @param array $attributes Block attributes
-	 * @return string Rendered block content
+	 * @param array $attributes Block attributes.
+	 * @return string Rendered block content.
 	 */
 	public function render_auth_toggler( $attributes ) {
 		$defaults = [
@@ -58,7 +58,7 @@ class AuthToggler {
 
 		$attributes = wp_parse_args( $attributes, $defaults );
 
-		// Sanitize attributes
+		// Sanitize attributes.
 		$show_content = (bool) $attributes['isAuth'];
 		$text_color   = sanitize_hex_color( $attributes['textColor'] );
 
@@ -92,18 +92,18 @@ class AuthToggler {
 	 * @return string
 	 */
 	public function display_formatted_role() {
-		// Check if the user has a role
+		// Check if the user has a role.
 		$role_key = $this->user->roles[0] ?? null;
 
-		// Return message if no role is assigned
+		// Return message if no role is assigned.
 		if ( is_null( $role_key ) ) {
 			return 'No role assigned';
 		}
 
-		// Determine the appropriate article
+		// Determine the appropriate article.
 		$article = $this->articles[ $role_key ] ?? 'a';
 
-		// Return the formatted role string
+		// Return the formatted role string.
 		return sprintf( '%s %s', $article, $this->role_name );
 	}
 

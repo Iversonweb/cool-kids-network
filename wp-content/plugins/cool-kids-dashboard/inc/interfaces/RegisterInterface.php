@@ -1,6 +1,6 @@
 <?php
 
-namespace CoolKidsDashboard\Inc\Interface;
+namespace Cool_Kids_Dashboard\Inc\Interfaces;
 
 interface RegisterInterface {
 	/**

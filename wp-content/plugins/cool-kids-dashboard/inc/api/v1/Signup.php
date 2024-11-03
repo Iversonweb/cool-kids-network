@@ -1,13 +1,13 @@
 <?php
 
-namespace CoolKidsDashboard\Inc\Api\V1;
+namespace Cool_Kids_Dashboard\Inc\Api\V1;
 
 class Signup {
 	/**
 	 * Handle the signup request
 	 *
-	 * @param WP_REST_Request $request
-	 * @return WP_REST_Response|WP_Error
+	 * @param \WP_REST_Request $request The request object containing signup data.
+	 * @return \WP_REST_Response|\WP_Error Response on success, error on failure.
 	 */
 	public function ckn_rest_api_signup_handler( $request ) {
 		$email    = sanitize_email( $request->get_param( 'email' ) );
@@ -39,8 +39,8 @@ class Signup {
 	/**
 	 * Validate the email
 	 *
-	 * @param string $email
-	 * @return WP_Error|true
+	 * @param string $email The email address to validate.
+	 * @return \WP_Error|true Error if invalid, true if valid.
 	 */
 	public function validate( $email ) {
 		if ( empty( $email ) || ! is_email( $email ) ) {
@@ -65,13 +65,13 @@ class Signup {
 	/**
 	 * Authenticate the user
 	 *
-	 * @param int $user_id
-	 * @return WP_REST_Response|WP_Error
+	 * @param int $user_id The ID of the user to authenticate.
+	 * @return \WP_REST_Response|\WP_Error Response on success, error on failure.
 	 */
 	public function authenticate( $user_id ) {
 		$user = get_user_by( 'id', $user_id );
 
-		do_action( 'wp_login', $user->user_login, $user );
+		do_action( 'cool_kids_dashboard_user_dashboard_login', $user->user_login, $user );
 
 		wp_set_current_user( $user_id );
 
@@ -89,7 +89,7 @@ class Signup {
 	/**
 	 * Fetch and update user data
 	 *
-	 * @param int $user_id
+	 * @param int $user_id The ID of the user to update.
 	 * @return void
 	 */
 	private function fetch_and_update_user_data( $user_id ) {
@@ -110,7 +110,7 @@ class Signup {
 	/**
 	 * Handle the signup error
 	 *
-	 * @param WP_Error|int $user_id
+	 * @param \WP_Error|int $user_id The user ID or error from signup attempt.
 	 * @return WP_Error|true
 	 */
 	public function signup_error( $user_id ) {

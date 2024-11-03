@@ -1,8 +1,8 @@
 <?php
 
-namespace CoolKidsDashboard\Inc;
+namespace Cool_Kids_Dashboard\Inc;
 
-use CoolKidsDashboard\Inc\Interface\RegisterInterface;
+use Cool_Kids_Dashboard\Inc\Interfaces\RegisterInterface;
 
 /**
  * Handles creating new pages upon plugin activation
@@ -74,7 +74,7 @@ class CreatePages implements RegisterInterface {
 			$page_id = $this->create_or_update_page( $slug, $page );
 
 			if ( $page_id instanceof \WP_Error ) {
-				$this->handle_error( $page_id );
+				return;
 			} else {
 				$options[ "ckd_{$slug}_page_id" ] = $page_id;
 			}
@@ -106,16 +106,6 @@ class CreatePages implements RegisterInterface {
 	 */
 	private function page_exists( $slug ) {
 		return get_page_by_path( $slug );
-	}
-
-	/**
-	 * Logs an error message to the PHP error log.
-	 *
-	 * @param WP_Error $error The error object containing the message to log.
-	 * @return void
-	 */
-	private function handle_error( $error ) {
-		error_log( "Failed to create custom page: {$error->get_error_message()}" );
 	}
 
 	/**

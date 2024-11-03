@@ -1,30 +1,43 @@
 <?php
 
-namespace CoolKidsDashboard\Inc\Api\V1;
+namespace Cool_Kids_Dashboard\Inc\Api\V1;
 
-use CoolKidsDashboard\Inc\Api\V1\Signup;
-use CoolKidsDashboard\Inc\Api\V1\Signin;
-use CoolKidsDashboard\Inc\Api\V1\ChangeRole;
-use CoolKidsDashboard\Inc\Interface\RegisterInterface;
+use Cool_Kids_Dashboard\Inc\Api\V1\Signup;
+use Cool_Kids_Dashboard\Inc\Api\V1\Signin;
+use Cool_Kids_Dashboard\Inc\Api\V1\ChangeRole;
+use Cool_Kids_Dashboard\Inc\Interfaces\RegisterInterface;
 use WP_REST_Server;
 
 class Init implements RegisterInterface {
 
 	/**
+	 * Signup instance for handling user registration.
+	 *
 	 * @var Signup
 	 */
 	protected $signup;
 
 	/**
+	 * Signin instance for handling user authentication.
+	 *
 	 * @var Signin
 	 */
 	protected $signin;
 
 	/**
+	 * ChangeRole instance for handling user role changes.
+	 *
 	 * @var ChangeRole
 	 */
 	protected $change_role;
 
+	/**
+	 * Initialize the API routes with required dependencies.
+	 *
+	 * @param Signup     $signup      Instance of Signup class.
+	 * @param Signin     $signin      Instance of Signin class.
+	 * @param ChangeRole $change_role Instance of ChangeRole class.
+	 */
 	public function __construct( Signup $signup, Signin $signin, ChangeRole $change_role ) {
 		$this->signup      = $signup;
 		$this->signin      = $signin;
@@ -32,7 +45,7 @@ class Init implements RegisterInterface {
 	}
 
 	/**
-	 * Register hooks
+	 * Register hooks.
 	 *
 	 * @return void
 	 */
@@ -41,7 +54,7 @@ class Init implements RegisterInterface {
 	}
 
 	/**
-	 * Register REST API routes
+	 * Register REST API routes.
 	 *
 	 * @return void
 	 */
@@ -54,7 +67,7 @@ class Init implements RegisterInterface {
 				'callback'            => [ $this->signup, 'ckn_rest_api_signup_handler' ],
 				'permission_callback' => '__return_true',
 			]
-			);
+		);
 
 		register_rest_route(
 			'ckn/v1',
@@ -64,7 +77,7 @@ class Init implements RegisterInterface {
 				'callback'            => [ $this->signin, 'ckn_rest_api_signin_handler' ],
 				'permission_callback' => '__return_true',
 			]
-			);
+		);
 
 		register_rest_route(
 			'ckn/v1',
@@ -73,9 +86,9 @@ class Init implements RegisterInterface {
 				'methods'             => WP_REST_Server::EDITABLE,
 				'callback'            => [ $this->change_role, 'ckn_rest_api_change_user_role' ],
 				'permission_callback' => function () {
-					return current_user_can( 'administrator' );
+					return 'administrator' === wp_get_current_user()->roles[0];
 				},
 			]
-			);
+		);
 	}
 }

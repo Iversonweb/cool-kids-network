@@ -1,17 +1,17 @@
 <?php
 
-namespace CoolKidsDashboard\Config;
+namespace Cool_Kids_Dashboard\Config;
 
-use CoolKidsDashboard\Inc\AccessControl;
-use CoolKidsDashboard\Inc\Admin\CountryMeta;
-use CoolKidsDashboard\Inc\Blocks\RegisterBlocks;
-use CoolKidsDashboard\Inc\Blocks\HeaderTools;
-use CoolKidsDashboard\Inc\Api\V1\Init;
-use CoolKidsDashboard\Inc\CreatePages;
-use CoolKidsDashboard\Inc\CustomMetadata;
-use CoolKidsDashboard\Inc\Front\Enqueue;
-use CoolKidsDashboard\Inc\Roles;
-use CoolKidsDashboard\Inc\Shortcodes;
+use Cool_Kids_Dashboard\Inc\AccessControl;
+use Cool_Kids_Dashboard\Inc\Admin\CountryMeta;
+use Cool_Kids_Dashboard\Inc\Blocks\RegisterBlocks;
+use Cool_Kids_Dashboard\Inc\Blocks\HeaderTools;
+use Cool_Kids_Dashboard\Inc\Api\V1\Init;
+use Cool_Kids_Dashboard\Inc\CreatePages;
+use Cool_Kids_Dashboard\Inc\CustomMetadata;
+use Cool_Kids_Dashboard\Inc\Front\Enqueue;
+use Cool_Kids_Dashboard\Inc\Roles;
+use Cool_Kids_Dashboard\Inc\Shortcodes;
 
 class Plugin 
 {

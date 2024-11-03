@@ -36,20 +36,21 @@
 		<exclude name="WordPress.WP.AlternativeFunctions.curl_curl_close" />
 		<exclude name="WordPress.WP.AlternativeFunctions.curl_curl_setopt_array" />
 		<exclude name="WordPress.WP.AlternativeFunctions.curl_curl_setopt" />
+		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedNamespaceFound" />
 	</rule>
     <rule ref="WordPress.WP.I18n">
         <properties>
-            <property name="text_domain" type="array" value="rocket" />
+            <property name="text_domain" type="array" value="ckd" />
         </properties>
     </rule>
     <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
         <properties>
-            <property name="prefixes" type="array" value="rocket,wp_rocket,WPMedia,WPRocket" />
+            <property name="prefixes" type="array" value="ckd,CoolKidsDashboard,Cool_Kids_Dashboard,CKD" />
         </properties>
     </rule>
 	<rule ref="WordPress.WP.Capabilities">
         <properties>
-            <property name="custom_capabilities" type="array" value="rocket_manage_options,rocket_remove_unused_css,rocket_purge_sucuri_cache,rocket_preload_cache,rocket_purge_cache,rocket_purge_cloudflare_cache,rocket_purge_posts,rocket_regenerate_critical_css,rocket_purge_terms,rocket_purge_users" />
+            <property name="custom_capabilities" type="array" value="cool_kid, cooler_kid, coolest_kid, view_dashboard, view_few_users_data" />
         </properties>
     </rule>
     <rule ref="WordPress.Files.FileName">

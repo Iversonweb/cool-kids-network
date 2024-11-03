@@ -1,12 +1,12 @@
 <?php
 
-namespace CoolKidsDashboard\Inc\Api\V1;
+namespace Cool_Kids_Dashboard\Inc\Api\V1;
 
 class Signin {
 	/**
 	 * Handle the signin request
 	 *
-	 * @param WP_REST_Request $request
+	 * @param WP_REST_Request $request The incoming REST API request.
 	 * @return WP_REST_Response|WP_Error
 	 */
 	public function ckn_rest_api_signin_handler( $request ) {
@@ -23,7 +23,7 @@ class Signin {
 	/**
 	 * Validate the email
 	 *
-	 * @param string $email
+	 * @param string $email The email to validate.
 	 * @return WP_Error|true
 	 */
 	public function validate( $email ) {
@@ -51,18 +51,18 @@ class Signin {
 	/**
 	 * Authenticate the user
 	 *
-	 * @param string $email
+	 * @param string $email The email to authenticate.
 	 * @return WP_REST_Response|WP_Error
 	 */
 	public function authenticate( $email ) {
 		$user = get_user_by( 'email', $email );
 
-		do_action( 'wp_login', $user->user_login, $user );
+		do_action( 'ckd_wp_login', $user->user_login, $user );
 
 		wp_set_current_user( $user->ID );
 		wp_set_auth_cookie( $user->ID, true );
 
-		$error_response = $this->signin_error( $user->id );
+		$error_response = $this->signin_error( $user->ID );
 		if ( is_wp_error( $error_response ) ) {
 			return $error_response;
 		}
@@ -73,13 +73,13 @@ class Signin {
 				'status'  => 'success',
 			],
 			201
-			);
+		);
 	}
 
 	/**
 	 * Handle the signin error
 	 *
-	 * @param WP_Error|int $user_id
+	 * @param WP_Error|int $user_id The user ID or WP_Error object to check for signin errors.
 	 * @return WP_Error|true
 	 */
 	public function signin_error( $user_id ) {

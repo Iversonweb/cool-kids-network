@@ -1,8 +1,8 @@
 <?php
 
-namespace CoolKidsDashboard\Inc;
+namespace Cool_Kids_Dashboard\Inc;
 
-use CoolKidsDashboard\Inc\Interface\RegisterInterface;
+use Cool_Kids_Dashboard\Inc\Interfaces\RegisterInterface;
 
 class CustomMetadata implements RegisterInterface {
 
@@ -20,7 +20,7 @@ class CustomMetadata implements RegisterInterface {
 	 *
 	 * @return void
 	 */
-	function ckd_create_country_metadata() {
+	public function ckd_create_country_metadata() {
 		$users = get_users();
 
 		foreach ( $users as $user ) {

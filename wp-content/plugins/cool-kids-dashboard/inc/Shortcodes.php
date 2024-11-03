@@ -1,9 +1,9 @@
 <?php
 
-namespace CoolKidsDashboard\Inc;
+namespace Cool_Kids_Dashboard\Inc;
 
 use WP_User;
-use CoolKidsDashboard\Inc\Interface\RegisterInterface;
+use Cool_Kids_Dashboard\Inc\Interfaces\RegisterInterface;
 
 /**
  * Class created to generate shortcodes
@@ -90,7 +90,7 @@ class Shortcodes implements RegisterInterface {
 	/**
 	 * Generate Dashboard Shortcode
 	 *
-	 * @return void
+	 * @return string The rendered shortcode content.
 	 */
 	public function user_dashboard_shortcode() {
 		ob_start();
@@ -101,15 +101,15 @@ class Shortcodes implements RegisterInterface {
 	/**
 	 * Generate Directory Shortcode
 	 *
-	 * @return void
+	 * @return string The rendered shortcode content.
 	 */
 	public function user_directory_shortcode() {
-		// Set up pagination variables
+		// Set up pagination variables.
 		$users_per_page = 2;
 
-		$current_page = isset( $_GET['paged'] ) ? max( 1, intval( $_GET['paged'] ) ) : 1;
+		$current_page = isset( $_GET['paged'], $_GET['_wpnonce'] ) && wp_verify_nonce( sanitize_key( $_GET['_wpnonce'] ), 'ckd_pagination_nonce' ) ? max( 1, intval( $_GET['paged'] ) ) : 1;
 
-		// Calculate offset
+		// Calculate offset.
 		$offset = ( $current_page - 1 ) * $users_per_page;
 
 		$total_pages = ceil( count( $this->get_total_users() ) / $users_per_page );
@@ -134,18 +134,18 @@ class Shortcodes implements RegisterInterface {
 	 * @return string
 	 */
 	public function display_formatted_role() {
-		// Check if the user has a role
+		// Check if the user has a role.
 		$role_key = $this->user->roles[0] ?? null;
 
-		// Return message if no role is assigned
+		// Return message if no role is assigned.
 		if ( is_null( $role_key ) ) {
 			return 'No role assigned';
 		}
 
-		// Determine the appropriate article
+		// Determine the appropriate article.
 		$article = $this->articles[ $role_key ] ?? 'a';
 
-		// Return the formatted role string
+		// Return the formatted role string.
 		return sprintf( '%s %s', $article, $this->role_name );
 	}
 
@@ -155,23 +155,23 @@ class Shortcodes implements RegisterInterface {
 	 * @return string URL of the avatar image.
 	 */
 	public function get_role_avatar() {
-		// Get the image filename based on the current user's role key
+		// Get the image filename based on the current user's role key.
 		$image_filename = $this->role_images[ $this->role_key ] ?? 'others.png';
 
-		// Construct the full URL to the image in the uploads directory
+		// Construct the full URL to the image in the uploads directory.
 		return( wp_get_upload_dir()['baseurl'] . '/2024/11/' . $image_filename );
 	}
 
 	/**
 	 * Get the avatar image URL based on the user's role or specific conditions.
 	 *
+	 * @param WP_User $user The user object.
 	 * @return string URL of the avatar image.
 	 */
 	public function get_user_avatar( $user ) {
-
 		$this->role_key = $this->user->roles[0] ?? 'guest';
 
-		if ( $this->role_key === 'cooler_kid' ) {
+		if ( 'cooler_kid' === $this->role_key ) {
 			return wp_get_upload_dir()['baseurl'] . '/2024/11/unkown-kid.png';
 		}
 
