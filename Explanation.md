@@ -92,3 +92,14 @@ The admin user story describes specific outcomes: simplified email-only sign-in 
 
 On seeing the user stories and project description, I was a bit overwhelmed at first. There were a lot of possible ways to go about the project. It didn't look like it was going to be a complex project, but i didn't take it lightly. I like handling projects beyond the technical side of things and think about how the next guy is going to find it easier to use. I set milestones for myself to work with and have a whole picture of the outcome in my head before i even start. Looking at the project and tasks that way helped me enjoy the process and loved the outcome. But i didn't loose focus on following best practices and maintaing code readability. Using modularity and object-oriented design gave me the freedom to be creative in the way I implemented logic and design choices. I get immense joy when people find it easy to use what i build, so i try to make it as customizable as possible.
 
+
+## How to install the project
+
+### Step 1: Clone the repo on a local machine
+### Step 2: Install the dependencies
+- Run `composer install` to install the dependencies for the project.
+- And go to the plugin root folder and run `npm install` to install the dependencies for the plugin, and run `npm run start` to start the plugin in development mode.
+### Step 3: Create a new database and import the sql file which is located in the storage folder in the root folder of the project.
+### Step 4: Update the wp_options table with the site url and home url which is `http://localhost:10009`
+### Step 5: Update the wp-config.php file with the database credentials
+### Step 6: Run the project on localhost
